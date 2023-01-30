@@ -1,0 +1,24 @@
+{
+  "name": "kickstartingnodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "routes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon task9.js",
+    "start-server": "node task9.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priti73/Sharpnercode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/priti73/Sharpnercode/issues"
+  },
+  "homepage": "https://github.com/priti73/Sharpnercode#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
