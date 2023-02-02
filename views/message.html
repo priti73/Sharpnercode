@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <header class="main-header">
+     <nav class="main-header__nav">
+         <ul class="main-header__item-list">
+            <li class="main-header__item"><a class="active" href="/">Message</a></li>
+            <li class="main-header__item"><a  href="/login">Login Page</a></li>
+            <li class="main-header__item"><a href="/contactus"> contactus</a></li>
+         </ul>
+     </nav>
+  </header> 
+  <main>
+    <form class="login-form" action="/" onsubmit="document.getElementById('username').value=localStorage.getItem('username')"method="POST">
+      <div class="form-control">
+         <label form="title">Type message</label>
+         <input id="message" type="text" name="message" placeholder="message">
+         <input type="hidden" name="username" id="username">
+      </div> 
+      <button type="submit">Send message</button>
+      </form>
+   </main>
+</body>
+
+</html>
