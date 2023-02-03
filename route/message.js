@@ -11,8 +11,7 @@ router.get('/',(req,res,next)=>{
          console.error(err);
           data='No chat exist'
         }
-       //res.send(`${data}
-       //{sendFile(path.join(rootDir,'views','message.html'))}`);
+       res.send(`${data} (path.join(rootDir,'views','message.html'))}`);
        res.sendFile(path.join(rootDir,'views','message.html'));
      
    })
