@@ -1,6 +1,9 @@
+
 const express=require('express');
+
+const productController=require('../controller/product');
+
+
 const router=express.Router();
-router.get('/',(req,res,next)=>{
-    res.send('<h1>Hello from Express!</h1>');
-});
+router.get('/',productController.getProduct);
 module.exports=router;
